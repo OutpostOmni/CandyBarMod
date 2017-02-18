@@ -32,7 +32,7 @@ namespace CandyBarMod {
 		// Execute some logic when the game scene has loaded
 		public override void OnGameLoad(IGameManager gameManager) {
 			// Register an item sprite from our asset bundle, so the game knows how to render it
-			gameManager.GetItemManager().Register(this, CandyBarItem.ID, "assets/candy-bar.png");
+			gameManager.GetItemManager().RegisterAsset(this, CandyBarItem.ID, "assets/candy-bar.png");
 
 			// Loop through all players
 			foreach (IPlayer player in gameManager.GetPlayers()) {
